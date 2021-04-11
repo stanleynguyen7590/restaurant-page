@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS for top bar */
+#top-bar {
+  height: 40px;
+  width: 95%;
+}
+
+.top-bar__container {
+  display: flex;
+  list-style-type: none;
+  width: 80%;
+  padding: 13px 0px;
+  margin: 0 auto;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* .top-bar__container > li:first-child, */
+.top-bar__container > li:nth-child(2) {
+  margin-left: 16px;
+}
+.top-bar__container svg {
+  color: #cda45e;
+}
+.top-bar__container > li:last-child {
+  margin-left: auto;
+}
+/* End CSS top bar */
+
+/* CSS for nav bar */
+#nav-bar {
+  height: 72px;
+  position: fixed;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  background: rgba(12, 11, 9, 0.6);
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  z-index: 10;
+}
+.nav-bar__name {
+  flex: 1;
+  line-height: 41px;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-left: 16px;
+  color: #fff;
+}
+.nav-bar__container {
+  display: flex;
+  flex: 2;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.nav-bar__container li {
+  font-size: 14px;
+  line-height: 41px;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-bar__container li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.nav-bar__container li:hover a {
+  text-decoration: none;
+  color: #cda45e;
+  cursor: pointer;
+}
+
+.nav-bar__bookingBtn {
+  flex: 1;
+  text-align: center;
+  line-height: 41px;
+  margin-right: 16px;
+}
+
+.nav-bar__bookingBtn div {
+  line-height: 41px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50px;
+  border: 2px solid #cda45e;
+  color: #fff;
+  width: 45%;
+  margin: 0px auto;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.nav-bar__bookingBtn:hover div {
+  background-color: #cda45e;
+}
+/* END CSS for nav bar */
+/* CSS for hero */
+#hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 100%;
+}
+#hero::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__container {
+  position: relative;
+  top: 40%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__container h1,
+.hero__container span {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+}
+.hero__container span {
+  color: #cda45e;
+  margin-left: 5px;
+}
+
+.hero__container h2 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.hero__button {
+  display: inline-block;
+  width: 10em;
+  height: 41px;
+  line-height: 41px;
+  font-size: 13px;
+  font-family: "Open Sans", "serif";
+  font-weight: 700px;
+  border: 2px solid #cda45e;
+  text-align: center;
+  color: #fff;
+  margin-top: 2em;
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+.hero__button:hover {
+  background-color: #cda45e;
+  color: #fff;
+}
+.hero__button:last-child {
+  margin-left: 15px;
+}
+/* END CSS for hero */

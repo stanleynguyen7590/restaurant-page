@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A Restaurant Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanleynguyen7590/restaurant-page.git"
+  },
+  "author": "Stanley Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanleynguyen7590/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/stanleynguyen7590/restaurant-page#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
