@@ -1,0 +1,437 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS for top bar */
+#top-bar {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar__container {
+  display: flex;
+  list-style-type: none;
+  width: 90%;
+  padding: 13px 0px;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  /* position: absolute; */
+  color: #fff;
+  z-index: 100;
+}
+
+/* .top-bar__container > li:first-child, */
+.top-bar__container > li:nth-child(2) {
+  margin-left: 16px;
+}
+.top-bar__container svg {
+  color: #cda45e;
+}
+.top-bar__container > li:last-child {
+  margin-left: auto;
+}
+/* End CSS top bar */
+
+/* CSS for nav bar */
+#nav-bar {
+  height: 72px;
+  left: 0;
+  right: 0;
+  top: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  background: rgba(12, 11, 9, 0.6);
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  z-index: 100;
+}
+.nav-bar__name {
+  flex: 1;
+  line-height: 41px;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-left: 4px;
+  color: #fff;
+}
+.nav-bar__container {
+  display: flex;
+  flex: 2;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.nav-bar__container li {
+  font-size: 14px;
+  line-height: 41px;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-bar__container li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.nav-bar__container li:hover a {
+  text-decoration: none;
+  color: #cda45e;
+  cursor: pointer;
+}
+
+.nav-bar__bookingBtn {
+  flex: 1;
+  text-align: center;
+  line-height: 41px;
+  /* margin-right: -24px; */
+}
+
+.nav-bar__bookingBtn div {
+  line-height: 41px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50px;
+  border: 2px solid #cda45e;
+  color: #fff;
+  width: 45%;
+  margin: 0px auto;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.nav-bar__bookingBtn:hover div {
+  background-color: #cda45e;
+}
+/* END CSS for nav bar */
+/* CSS for hero */
+#hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+#hero::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__container {
+  position: relative;
+  top: 40%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__container h1,
+.hero__container span {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+}
+.hero__container span {
+  color: #cda45e;
+  margin-left: 5px;
+}
+
+.hero__container h2 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.hero__button {
+  display: inline-block;
+  width: 10em;
+  height: 41px;
+  line-height: 41px;
+  font-size: 13px;
+  font-family: "Open Sans", "serif";
+  font-weight: 700px;
+  border: 2px solid #cda45e;
+  text-align: center;
+  color: #fff;
+  margin-top: 2em;
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+.hero__button:hover {
+  background-color: #cda45e;
+  color: #fff;
+}
+.hero__button:last-child {
+  margin-left: 15px;
+}
+/* END CSS for hero */
+/* CSS for About */
+.about__container {
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+
+.about__container::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.about__text {
+  height: 100vh;
+  width: 45%;
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__text h1 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1em;
+}
+
+.about__text i {
+  font-size: 16px;
+  font-family: "Open Sans", "serif";
+  margin-bottom: 1em;
+}
+
+.about__text p {
+  font-size: 16px;
+  font-family: "Open Sans", "serif";
+  margin-bottom: 1em;
+}
+.about__image {
+  height: 100vh;
+  width: 45%;
+  z-index: 10;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about__image img {
+  width: 90%;
+  margin: 0 auto;
+  z-index: 110;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.about__image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+/* END CSS for About */
+
+.menu__container {
+  width: 100%;
+  background-color: #1a1814;
+}
+
+.menu__container h2 {
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+  color: #aaaaaa;
+  font-weight: 500;
+  line-height: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.menu__container h2:after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+.menu__container p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+  padding-left: 10%;
+}
+
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu__grid > div {
+  display: flex;
+  margin-bottom: 30px;
+}
+.menu__grid > div > div {
+  flex: 1;
+  padding-left: 10px;
+}
+.menu__grid img {
+  width: 70px;
+  height: 70px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.menu__grid img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.menu__grid h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-left: 0px;
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.menu__grid h1:hover {
+  color: #cda45e;
+}
+
+.menu__grid i {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 0;
+}
+
+.menu__grid i + p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #cda45e;
+  padding-left: 0px;
+}
+
+/* CSS for Specials */
+.specials__container {
+  width: 100%;
+  background-color: #0c0b09;
+  height: 100vh;
+}
+.specials__container h2 {
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+  color: #aaaaaa;
+  font-weight: 500;
+  line-height: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.specials__container h2:after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+.specials__container p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+  padding-left: 10%;
+}
+
+.specials__name-container {
+  display: flex;
+  padding-left: 10%;
+  flex: 1;
+}
+
+.specials__name-container ul {
+  display: flex;
+  flex-direction: column;
+}
+.specials__name-container li {
+  color: #fff;
+  list-style-type: none;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.specials__name-container .specials__name-active {
+  background-color: #cda45e;
+  color: #000;
+  transition: background-color 0.5s;
+}
+.specials__main-container {
+  display: flex;
+}
+.specials__content-container {
+  flex: 2;
+  transition: display 1s;
+}
+.specials__content-container h1 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+
+.specials__content-container i {
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  color: #aaaaaa;
+}
+.specials__content-container p {
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  color: #aaaaaa;
+  padding-left: 0;
+}
+.specials__content-hidden {
+  display: none;
+}
+.specials__img-container {
+  flex: 1;
+  transition: display 0.5s;
+}
+.specials__img-container img {
+  width: 80%;
+}
+/* END CSS for Specials */
