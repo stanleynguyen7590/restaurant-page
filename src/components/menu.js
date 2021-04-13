@@ -76,7 +76,7 @@ const createSingleMenuItem = item => {
   menuItem.id = item.name;
   menuItem.insertAdjacentHTML(
     "beforeend",
-    `<img src="../src/assets/img/${item.img}"><div><h1>${item.name}</h1> <i>${item.desc}</i> <p>${item.price}</p></div>`
+    `<img src="./assets/img/${item.img}"><div><h1>${item.name}</h1> <i>${item.desc}</i> <p>${item.price}</p></div>`
   );
   return menuItem;
 };

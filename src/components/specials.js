@@ -88,7 +88,7 @@ const createSingleImage = (img, active) => {
   singleImage.className = "specials__img-container";
   singleImage.insertAdjacentHTML(
     "beforeend",
-    `<img src="../src/assets/img/${img}">`
+    `<img src="./assets/img/${img}">`
   );
 
   if (!active) singleImage.classList.add("specials__content-hidden");

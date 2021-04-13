@@ -11,7 +11,7 @@ const aboutPageImage = document.createElement("div");
 aboutPageImage.className = "about__image";
 aboutPageImage.insertAdjacentHTML(
   "beforeend",
-  `<img src="../src/assets/img/about.jpg"></img>`
+  `<img src="./assets/img/about.jpg"></img>`
 );
 aboutPageContainer.append(aboutPageText);
 aboutPageContainer.append(aboutPageImage);
